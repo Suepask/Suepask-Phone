@@ -1,0 +1,143 @@
+/* section admin */
+
+.admin{
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    padding: 2rem;
+    width: 650px;
+    /* border: 1px solid red; */
+    background-color: rgb(240, 236, 236);
+    border-radius: 30px;
+}
+
+.admin img{
+    border-radius: 30px;
+}
+
+.admin .textadmin{
+    width: 300px;
+    padding-left: 2rem;
+    /* border: 1px solid red; */
+}
+
+.admin .textadmin a{
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.admin .textadmin a:hover{
+    color: rgb(26, 202, 93);
+    transition: .2s ease-in-out;
+}
+
+
+.admin .textadmin ul{
+    list-style: none;
+}
+
+.admin .textadmin > ul > li{
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.admin .textadmin > ul > li :not(:last-child){
+    margin-right: 1px;
+}
+
+.admin .textadmin .dropdown{
+    position: relative;
+}
+
+.admin .textadmin .dropdown .add{
+    color: black;
+}
+
+.admin .textadmin a{
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 22px;
+    color: rgb(0, 0, 0);
+    line-height: 1.5;
+    display: block;
+}
+
+
+/* .admin .textadmin a:hover{
+    transition: 0.2s;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 22px;
+    color: rgb(255, 255, 255);
+    line-height: 1.5;
+    display: block;
+} */
+
+
+.admin .textadmin > ul > li > a{
+    padding: 24px o;
+}
+
+.admin .textadmin > ul > .dropdown > a{
+    padding-right: 15px;
+}
+
+
+
+
+.admin .textadmin .sub-menu{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 230px;
+    padding: 15px 0;
+    /** สีdropdown **/
+    background-color: hsl(0, 0%, 0%); 
+    box-shadow: 0 0 5px hsla(0, 0%, 0%, 0.5);
+    z-index: 1;
+    transform-origin: top;
+    transform: scaleY(0);
+    visibility: hidden;
+    opacity: 0;
+}
+
+.admin .textadmin li:hover > .sub-menu{
+    opacity: 1;
+    transform: none;
+    visibility: visible;
+    transition: all 0.5 ease;
+}
+
+.admin .textadmin .sub-menu{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 230px;
+    padding: 15px 0;
+    /** สี dropsown **/
+    background-color: #ffffff;
+    box-shadow: 0 0 5px black;
+    z-index: 1;
+    border-radius: 20px;
+}
+
+.admin .textadmin .sub-menu a{
+    padding: 6px 24px;
+}
+
+.admin .textadmin .sub-menu span{
+    /** background-image: linear-gradient(hsl(0,0%,100%),hsl(0,0%,100%) ); **/  /** line color **/
+    background-size: 0 1px;
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+    transition: background-size 0.5s ease;
+}
+
+.admin .textadmin .sub-menu li:hover > a > span{
+    transition: .2s;
+    margin: 10px;
+    background-size: 100% 1px;
+}
+
+
+/* end section admin */
